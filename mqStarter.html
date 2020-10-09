@@ -76,6 +76,95 @@
         padding: 0.5em 1em;
         color: #fff;
       }
+	  
+	  
+	  
+@media screen and (min-width: 40em)  {
+  /* For tablets: */
+		header {
+		background-color: #000066;
+		}
+
+        nav ul {
+          display: flex;
+        }
+
+        nav li {
+          flex: 1;
+        }
+		
+		article ul {
+		display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 50px;
+		}
+		
+		.cards h2 {
+        background-color: #000066;
+        color: #fff;
+		}
+		
+}
+
+@media screen and (min-width: 70em) {
+  /* For desktop: */
+		header {
+		display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 50px;
+		width: 100%;
+		background-color: #333;
+        }
+			
+		header .title {
+		position:fixed;
+		}
+		
+		nav ul {
+		float: right;
+		width: 100%;
+		margin-left: 300px;
+		padding-left: 500px;
+		}
+		
+		header a{
+		height: 100px;
+		display: inline;
+		text-decoration: none;
+		float: right;
+		border-top: none;
+		padding-top: 30px;
+		}
+			
+		article {
+		height: 900px;
+		margin-top: 20px;
+		width: 75%;
+		float: left;
+		padding-right: 20px;
+		}
+	
+		article ul {
+		display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 50px;
+		}
+		
+		.cards h2 {
+        background-color: #333;
+        color: #fff;
+		}
+	
+		.sidebar {	
+		height: 900px;
+		width: 25%;
+		float: left;
+		padding-bottom: 65%;
+		margin-top: 20px;
+		box-sizing: border-box;
+		}
+		
+}
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
